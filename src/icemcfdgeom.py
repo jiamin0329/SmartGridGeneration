@@ -7,6 +7,7 @@
 #    Date        Author        Comment
 #  28-Nov-2017   Jiamin Xu     Initial creation
 #  03-Dec-2017   Jiamin Xu     Add Validate()
+#  09-Dec-2017   Jiamin Xu     Report object name if there is an error
 #######################################################
 #            Import modules
 #######################################################
@@ -91,7 +92,7 @@ class IcemCurve(Curve, IcemGeom):
         self.fromTinFile = curveFile
         if self.fromTinFile:
             if not self.__Parse():
-                print ("Fail read icemcfd bspline!!!")
+                print (self.name + ": Fail read icemcfd bspline!!!")
         else:
             print "Tin File not found!!!"
             
