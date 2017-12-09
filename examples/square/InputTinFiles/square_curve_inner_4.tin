@@ -1,0 +1,6 @@
+define_curve family GEOM tetra_size 1e+010 name crv.03 vertex1 pnt.04 vertex2 pnt.00
+bspline
+2,2,0
+0,0,1,1
+-1,1,0
+-1,-1,0

@@ -1,0 +1,56 @@
+prescribed_point -1 -1 0 family inner name square_point_inner_1
+prescribed_point 1 -1 0 family inner name square_point_inner_2
+prescribed_point 1 1 0 family inner name square_point_inner_3
+prescribed_point -1 1 0 family inner name square_point_inner_4
+define_curve family inner name square_curve_inner_1
+bspline 
+2,2,0
+0.0,0.0,1.0,1.0
+1.0,-1.0,0.0
+-1.0,-1.0,0.0
+define_curve family inner name square_curve_inner_2
+bspline 
+2,2,0
+0.0,0.0,1.0,1.0
+1.0,1.0,0.0
+1.0,-1.0,0.0
+define_curve family inner name square_curve_inner_3
+bspline 
+2,2,0
+0.0,0.0,1.0,1.0
+-1.0,1.0,0.0
+1.0,1.0,0.0
+define_curve family inner name square_curve_inner_4
+bspline 
+2,2,0
+0.0,0.0,1.0,1.0
+-1.0,1.0,0.0
+-1.0,-1.0,0.0
+prescribed_point -10 -10 0 family outer name square_point_outer_1
+prescribed_point 10 -10 0 family outer name square_point_outer_2
+prescribed_point 10 10 0 family outer name square_point_outer_3
+prescribed_point -10 10 0 family outer name square_point_outer_4
+define_curve family outer name square_curve_outer_1
+bspline 
+2,2,0
+0.0,0.0,1.0,1.0
+-10.0,-10.0,0.0
+10.0,-10.0,0.0
+define_curve family outer name square_curve_outer_2
+bspline 
+2,2,0
+0.0,0.0,1.0,1.0
+10.0,-10.0,0.0
+10.0,10.0,0.0
+define_curve family outer name square_curve_outer_3
+bspline 
+2,2,0
+0.0,0.0,1.0,1.0
+10.0,10.0,0.0
+-10.0,10.0,0.0
+define_curve family outer name square_curve_outer_4
+bspline 
+2,2,0
+0.0,0.0,1.0,1.0
+-10.0,10.0,0.0
+-10.0,-10.0,0.0

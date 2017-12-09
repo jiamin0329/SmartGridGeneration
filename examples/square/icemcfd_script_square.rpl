@@ -1,0 +1,39 @@
+##Load tetin file 
+ic_load_tetin square_final.tin
+##Load blk file 
+ic_hex_restore_blocking square.blk
+ic_hex_switch_blocking root 
+ic_hex_error_messages off_minor 
+## project 11 to square_point_outer_1
+ic_hex_move_node 11 square_point_outer_1
+## project 19 to square_point_outer_2
+ic_hex_move_node 19 square_point_outer_2
+## project 21 to square_point_outer_3
+ic_hex_move_node 21 square_point_outer_3
+## project 13 to square_point_outer_4
+ic_hex_move_node 13 square_point_outer_4
+## project 32 to square_point_inner_1
+ic_hex_move_node 32 square_point_inner_1
+## project 34 to square_point_inner_2
+ic_hex_move_node 34 square_point_inner_2
+## project 35 to square_point_inner_3
+ic_hex_move_node 35 square_point_inner_3
+## project 33 to square_point_inner_4
+ic_hex_move_node 33 square_point_inner_4
+## project 11 19 0 1 to square_curve_outer_1
+ic_hex_set_edge_projection 11 19 0 1 square_curve_outer_1
+## project 19 21 0 1 to square_curve_outer_2
+ic_hex_set_edge_projection 19 21 0 1 square_curve_outer_2
+## project 13 21 0 1 to square_curve_outer_3
+ic_hex_set_edge_projection 13 21 0 1 square_curve_outer_3
+## project 11 13 0 1 to square_curve_outer_4
+ic_hex_set_edge_projection 11 13 0 1 square_curve_outer_4
+## project 32 34 0 1 to square_curve_inner_1
+ic_hex_set_edge_projection 32 34 0 1 square_curve_inner_1
+## project 34 35 0 1 to square_curve_inner_2
+ic_hex_set_edge_projection 34 35 0 1 square_curve_inner_2
+## project 33 35 0 1 to square_curve_inner_3
+ic_hex_set_edge_projection 33 35 0 1 square_curve_inner_3
+## project 32 33 0 1 to square_curve_inner_4
+ic_hex_set_edge_projection 32 33 0 1 square_curve_inner_4
+ic_hex_create_mesh OUTER INNER SOLID proj 2 dim_to_mesh 3 
